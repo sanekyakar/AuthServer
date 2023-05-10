@@ -7,7 +7,7 @@ namespace AuthServer.Bll.Abstractions
     {
         public void Register(AccountInfo accountInfo);
 
-        public void Authentication(AccountInfo accountInfo);
+        public AuthInfo Authentication(AccountInfo accountInfo);
 
         
     }

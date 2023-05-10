@@ -16,6 +16,9 @@ namespace AuthServer.DAL
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            var adminRole=new Role();
+
+
             //var UserRole = new Role { Name = "User", Id = 2 };
             //var observerRole=new Role { Name ="Observer",Id=3 };
             //var adminRole= new Role { Name ="admin",Id=1 };

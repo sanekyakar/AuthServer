@@ -31,6 +31,7 @@ namespace AuthServer.DAL
         {
             return _authContext.Users
                 .AsNoTracking()
+                .Include(r=>r.Role)
                 .FirstOrDefault(u=>u.Login==login);
         }
 

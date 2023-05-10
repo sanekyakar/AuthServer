@@ -18,16 +18,5 @@ namespace AuthServer.Bll.Models
         /// </summary>
         public User User { get; set; }
 
-        //public long? UserId { get; set; }
-
-        public void SetRoleName(long id)
-        {
-            Name = id switch
-            {
-                1 => "Admin",
-                2 => "User",
-                _ => "Observer",
-            };
-        }
     }
 }
